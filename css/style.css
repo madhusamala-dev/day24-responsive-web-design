@@ -79,7 +79,6 @@ button.reserve-table-button:hover {
 */
 section.hero-unit-container {
     display: flex;
-    height: 70vh;
     flex-direction: row;
     padding: 5vh 10vw;
 }
@@ -202,7 +201,7 @@ article.highlight-card:hover {
 /* responsives styles starts here */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 575px) {
 
     .header-section {
         height: 20vh;
@@ -268,13 +267,45 @@ article.highlight-card:hover {
 
     article.highlight-card {
         width: 80vw;
+        margin-bottom: 1em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    img.logo {
+        height: 12vh;
+        width: 15vw;
     }
 
-    /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) {}
+    button.reserve-table-button {
+        width: 15vw;
+    }
 
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {}
+    .hero-unit-text {
+        font-size: 2rem;
+    }
 
-    /* Extra large devices (large desktops, 1200px and up) */
-    @media (min-width: 1200px) {}
+    .hero-unit-image-container img {
+        width: 100%;
+    }
+
+    section.why-choose-us {
+        margin-top: 0;
+    }
+
+    h1.our-services-text {
+        margin-top: 0;
+    }
+
+    article.highlight-card {
+        width: 15vw;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
